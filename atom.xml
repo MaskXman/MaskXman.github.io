@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://maskxman.github.io/"/>
-  <updated>2020-10-06T11:17:07.245Z</updated>
+  <updated>2021-01-04T14:32:34.629Z</updated>
   <id>http://maskxman.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>桌面应用程序开发项目阶段性总结</title>
+    <link href="http://maskxman.github.io/2020/12/13/%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E9%A1%B9%E7%9B%AE%E9%98%B6%E6%AE%B5%E6%80%A7%E6%80%BB%E7%BB%93/"/>
+    <id>http://maskxman.github.io/2020/12/13/%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E9%A1%B9%E7%9B%AE%E9%98%B6%E6%AE%B5%E6%80%A7%E6%80%BB%E7%BB%93/</id>
+    <published>2020-12-13T05:58:11.044Z</published>
+    <updated>2021-01-04T14:32:34.629Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="StatisticalAnalysis统计分析软件项目阶段性总结"><a href="#StatisticalAnalysis统计分析软件项目阶段性总结" class="headerlink" title="StatisticalAnalysis统计分析软件项目阶段性总结"></a>StatisticalAnalysis统计分析软件项目阶段性总结</h2><hr><h3 id="StatisticalAnalysis项目背景"><a href="#StatisticalAnalysis项目背景" class="headerlink" title="StatisticalAnalysis项目背景"></a>StatisticalAnalysis项目背景</h3><p>&emsp;&emsp;这次项目用的编程语言是Java（后期可能会用C++），Java的SWT桌面应用程序开发。目前这个定位还是单机无数据库程序，学习成本不高，Java SWT，NatTable，RCP ，Eclipse，gitee分布式合作开发剩下的就是一些Java 的一些基础，解码器的数据分析存储到数据结构，调试环境等等。<strong>在前期学习的过程中，我认为最难的是NatTable的学习，在国内基本没有中文资料可以查阅，但是我负责整个项目最重要的的第一步数据的解码，存入数据结构，所以只能用读Eclipse官方开发小组的NatTable的源代码源文档了，对自己的英语水平再一次有了深刻的认识，，，心态炸裂</strong>，目前为止，我负责的项目模块（源数据文件导入模块，个案汇总及数据分析分析模块）已经基本完成了，但是我觉得我写的垃圾代码在寒假还得改改，优化一下我那笨拙的for循环。。。。。。</p><h3 id="NatTable的初识："><a href="#NatTable的初识：" class="headerlink" title="NatTable的初识："></a>NatTable的初识：</h3><p>&emsp;&emsp;Nebula NatTable —- high performance SWT data grid(高性能网格数据集)，支持处理大数据，动态实时更新。作为处理大数据的自定义虚拟网格部件，NatTable出乎意料的不会出现任何性能问题。</p><h4 id="特性："><a href="#特性：" class="headerlink" title="特性："></a>特性：</h4><h5 id="表格、树和特殊布局："><a href="#表格、树和特殊布局：" class="headerlink" title="表格、树和特殊布局："></a>表格、树和特殊布局：</h5><ul><li>支持扩展/折叠行的树布局</li><li>🉑️跨越多个单元格</li><li>支持动态修改表格布局</li></ul><h5 id="更低的需求："><a href="#更低的需求：" class="headerlink" title="更低的需求："></a>更低的需求：</h5><ul><li>使用简单的接口链接数据模型</li><li>仅在需要时加载单元格，例如绘画</li></ul><h5 id="UI绑定："><a href="#UI绑定：" class="headerlink" title="UI绑定："></a>UI绑定：</h5><ul><li>可定制的实际值与记录值的转换器</li><li>支持单独渲染每一个单元格</li><li>可绑定鼠标事件的特性</li></ul><h5 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h5><ul><li>支持选择行、列、单个单元格</li><li>支持宏定义键盘，鼠标</li><li>区域选择与固定避免滑动</li><li>区域扩展/折叠</li><li>多个分组级别</li></ul><h5 id="排序、筛选和查询"><a href="#排序、筛选和查询" class="headerlink" title="排序、筛选和查询"></a>排序、筛选和查询</h5><ul><li>支持在表中搜索</li><li>通过指示符排序列值</li><li>筛选列值</li><li>最大可能比较列值</li></ul><h5 id="单元格突出显示"><a href="#单元格突出显示" class="headerlink" title="单元格突出显示"></a>单元格突出显示</h5><ul><li>闪烁的单元格</li><li>例如更改单元格或您自己的条件</li><li>列/行定制</li><li>NatTable提供了许多预定义的操作，这些操作使用户可以自定义表</li></ul><h5 id="屏幕截图列选择器-列选择器：快速更改顺序和可见性"><a href="#屏幕截图列选择器-列选择器：快速更改顺序和可见性" class="headerlink" title="屏幕截图列选择器 列选择器：快速更改顺序和可见性"></a>屏幕截图列选择器 列选择器：快速更改顺序和可见性</h5><ul><li>调整行和列的大小并自动调整大小（通过鼠标）</li><li>多行/列的大小调整，因此所有选定的行/列的大小都调整为相同的大小</li><li>重新排序和隐藏/显示列（通过鼠标和对话框）</li><li>组/取消组列</li><li>重命名列</li><li>配置列的单元格格式</li><li>NatTable 可以保存所选配置，支持标准动作（复制，粘贴，打印，导出Excel）。</li></ul><p>&emsp;&emsp;本篇博客重点总结在项目中出现的问题，调试分析，总结，有关NatTable的学习这次只是大概介绍一下特点，具体深入学习大家可以参考网址<a href="https://www.eclipse.org/nattable/documentation.php?page=getting_started" target="_blank" rel="noopener">NatTable</a></p><hr><p>&emsp;&emsp;<strong>之前一直在做前端的微信小程序，小游戏，关于RCP富文本客户端的开发就算到现在我写完两个需求还是不太熟悉这个框架，因为框架老师基本都搭建好了，为了低耦合，我们分到的任务都是不太相关的，我负责整个程序的第一步—解码源数据CSV文件实现导入，可选择分隔符，选择区域等功能；另一个需求是写一个项目汇总的hander页面，实现数据的列标题注入，选择，数学分析的方法的选择，进行匹配并输出结果</strong></p><h3 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h3><ol><li>Gitee代码托管的一系列问题，其实就是从项目clone到本地，创建分支，提交代码，pull request等一系列团队合作的必要知识的融会贯通<br> &emsp;&emsp;解决方案在遇到这个问题的时候系统的学习了git的项目使用，并输出为博客（本网站，CSDN都可查找）</li><li>解码器的学习<br> &emsp;&emsp;因为我被分到项目的第一步的需求，所以我的速度可能得尽可能最快，于是我在网上搜索，确定需求是csv文件的格式，首先我先了解了对象是csv逗号分隔符文件，然后确定比较使用opencsv解码器，原因是这个网上可以查到的产生问题并解决的最多（意思就是生态挺好的）。。。。然后确定使用的版本，之后去<a href="http://opencsv.sourceforge.net/" target="_blank" rel="noopener">opencsv</a>的官方文档学习了一下方法，并接入此项目,在不需要重写的情况下完成了需求.</li><li>NatTable的学习<br> &emsp;&emsp;采用NatTable表格的数据结构，，，，为了把导入的csv文件存入数据结构中，我又学习了一下NatTable，困难的是NatTable竟然基本没有国内资料，博客，什么的基本都没找到，，，，，于是我只能去学习官网的英文说明文档，下载了实例程序去阅读源码，，，勉勉强强的完成了把数据导入的需求。后面有时间我会出一篇总结NatTable的博客，希望可以帮助有需要的的人（可能国内对比的很少我的水平也有限，望大家斧正）。</li><li>SWT的取值传值等问题<br> &emsp;&emsp;这没有多说的，哪里不会查哪里，图书馆泡泡！</li><li>基本的Java语言的注入问题<br> &emsp;&emsp;在解决从导入文件的数据中选择列标题在SWT下呈现列表选择功能，有个注入问题，这里学习一下：<br>常用的注入有三种：<br> 构造方法的注入，setter注入以及基于注解的注入(这次项目并没有设计注解注入，于是我只是大致的了解一下，并不)。</li></ol><ul><li>构造方法的注入：写Bean时就保证必要的属性，确保bean实例化之后就可以使用，不用写setter，直接构造就可以，也可以在构造文件中配置该类bean，并配置构造器。<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Student</span></span>&#123;</span><br><span class="line">   <span class="keyword">private</span>  String name;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">         <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>  Setter注入，要求bean提供一个默认的构造函数,并为需要注入的属性提供对应的setter方法。<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span>&#123;</span><br><span class="line">      <span class="keyword">private</span> String name;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;   </span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125; </span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li></ul><ol start="6"><li>数学分析包的学习<br> &emsp;&emsp;学习Apach Math 3 ，方法与导入数据列标题相同思路可以选择方法进行匹配，就是学习官方文档，会用。</li><li>突发状况<ol><li>打不开Eclipse，当时的背景是代码没有动过，前一天好使，Mac OS X 更新到最新系统版本，报错出现JVM问题，在复制异常后从网上找到解决办法修改Eclipse的配置文件更改JVM的配置.</li><li>打开后运行不了示例程序，当时Eclipse 是Luna for Rcp，无报错，无异常，Run就是无响应，解决办法是更新到最新版本2020.6的Eclipse for Rcp点击运行后就出现报错了，之后根据报错发现原因是系统更新后配置和依赖被清掉了，于是配置好所有的依赖，成功运行！</li></ol></li></ol><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;StatisticalAnalysis统计分析软件项目阶段性总结&quot;&gt;&lt;a href=&quot;#StatisticalAnalysis统计分析软件项目阶段性总结&quot; class=&quot;headerlink&quot; title=&quot;StatisticalAnalysis统计分析软件项目阶
+      
+    
+    </summary>
+    
+    
+      <category term="基于NatTable的统计软件开发" scheme="http://maskxman.github.io/categories/%E5%9F%BA%E4%BA%8ENatTable%E7%9A%84%E7%BB%9F%E8%AE%A1%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="Java" scheme="http://maskxman.github.io/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>Gitee 使用教程</title>
