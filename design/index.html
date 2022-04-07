@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MaskXman 's Blog | MaskXman 's Blog</title><meta name="description" content="大随机数生成器                                                       大随机数生成器                              RNG                 RANDOM NUMBER GENERATOR                 ABOUT"><meta name="author" content="Mr. Li"><meta name="copyright" content="Mr. Li"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://maskxman.github.io/design/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="MaskXman 's Blog"><meta property="og:url" content="http://maskxman.github.io/design/"><meta property="og:site_name" content="MaskXman 's Blog"><meta property="og:description" content="大随机数生成器                                                       大随机数生成器                              RNG                 RANDOM NUMBER GENERATOR                 ABOUT"><meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><meta property="article:published_time" content="2022-03-31T12:37:00.656Z"><meta property="article:modified_time" content="2022-03-31T12:37:00.656Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MaskXman 's Blog | MaskXman 's Blog</title><meta name="description" content="大随机数生成器                                                       大随机数生成器                              RNG                 RANDOM NUMBER GENERATOR                 ABOUT"><meta name="author" content="Mr. Li"><meta name="copyright" content="Mr. Li"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://maskxman.github.io/design/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="MaskXman 's Blog"><meta property="og:url" content="http://maskxman.github.io/design/"><meta property="og:site_name" content="MaskXman 's Blog"><meta property="og:description" content="大随机数生成器                                                       大随机数生成器                              RNG                 RANDOM NUMBER GENERATOR                 ABOUT"><meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><meta property="article:published_time" content="2022-04-07T12:40:58.125Z"><meta property="article:modified_time" content="2022-04-07T12:40:58.125Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
   document.documentElement.setAttribute('data-theme', 'dark')
   if (document.querySelector('meta[name="theme-color"]') !== null) {
     document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
@@ -127,16 +127,16 @@ if (autoChangeMode === '1') {
 
         <section id="random-number-generator" data-aos="fade-up" data-aos-once="true" data-aos-delay="400" data-aos-duration="1100">
             <header>
-                <h2>大随机数生成器</h2>
+                <h2>银行卡号生成器</h2>
             </header>
             <div id="form">
                 <form>
                     <fieldset>
-                        <label for="minimum">Minimum</label>
+                        <label for="minimum">最小卡号数值</label>
                         <input id="minimum" type="number" placeholder="e.g. 1">
-                        <label for="maximum">Maximum</label>
-                        <input id="maximum" type="number" placeholder="e.g. 10">
-						<label for="count">Count</label>
+                        <label for="maximum">最大卡号数值</label>
+                        <input id="maximum" type="number" placeholder="e.g. 10000000">
+						<label for="count">卡片数量</label>
 						<input id="count" type="number" placeholder="e.g. 50" />
                     </fieldset>
                     <button id="generate" type="button">导出到本地</button>
@@ -147,20 +147,20 @@ if (autoChangeMode === '1') {
 
         <section id="about">
             <header>
-                <h2 data-aos="fade-right" data-aos-once="true" data-aos-duration="500">什么是随机数?</h2>
+                <h2 data-aos="fade-right" data-aos-once="true" data-aos-duration="500">什么是大随机数?</h2>
             </header>
             <ul>
                 <li class="card" data-aos="zoom-out-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="500">
                     <img src= "/img/loading.gif" data-src="./images/dice.jpg" width="400" alt="A pair of dice on wood table">
-                    <p><abbr title="Random Number Generator">RNG</abbr> is a process in which a computer generates a number or symbol that cannot be reasonably predicted.</p>
+                    <p><abbr title="Random Number Generator">RNG</abbr> 大随机数发生器（Big Random Number Generator，BRNG）是在聚焦大规模数据加密生成应用需求的衍生。随着移动互联网、物联网等技术的快速发展，传统纯硬件形式的随机数发生器逐渐显现出硬件更新困难、开发成本高等问题，导致适用范围受限。因此，在计算机、移动终端等设备上通常采用软件随机数发生器（softwareRNG,SRNG）提供随机数服务。</p>
                 </li>
                 <li class="card" data-aos="zoom-out-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="100">
                     <img src= "/img/loading.gif" data-src="./images/code.jpeg" width="400" alt="Lines of code jumbled together randomly">
-                    <p>In this calculator, we're using <abbr title="pseudo-random number generators">PRNGS</abbr>, meaning that this calculator isn't truly random as it only produces a sequence of numbers that look random.</p>
+                    <p>In this calculator, we're using <abbr title="pseudo-random number generators">PRNGS</abbr>,目前，Linux、Android、IOS以及Windows等典型操作系统平台均具备各自的SRNG，提供基于软件的随机数服务。在人们的生活中，很多场景都可以用到随机数，例如高校学生一卡通校园卡卡号，福利彩票序列号，车牌摇号序列号，公共用房分配序列号等，均可以通过设计实现基于大随机数生成器的算法，实现基于大随机数应用案例的开发。</p>
                 </li>
                 <li class="card" data-aos="zoom-out-left" data-aos-once="true" data-aos-duration="1000" data-aos-delay="1000">
                     <img src= "/img/loading.gif" data-src="./images/random.jpg" width="400" alt="Random noise">
-                    <p>If you want a truly random RNG, use <a href="https://www.random.org/" target="_blank" rel="noopener">random.org</a> as it uses atmospheric noise, which in most cases is better than PRNGS.</p>
+                    <p>哈尔滨商业大学计算机与信息工程学院</p>
                 </li>
             </ul>
         </section>
