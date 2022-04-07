@@ -194,6 +194,30 @@
   </entry>
   
   <entry>
+    <title>微信小程序学习笔记（一）</title>
+    <link href="http://maskxman.github.io/2020/07/10/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://maskxman.github.io/2020/07/10/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2020-07-10T12:14:30.000Z</published>
+    <updated>2020-05-21T15:12:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>&emsp;&emsp;时隔2个月终于要总结一下这断断续续的微信小程序基础开发笔记了，再不总结，我可能连github怎么用都不知道了 。。。。</p><h1 id="干货来袭"><a href="#干货来袭" class="headerlink" title="干货来袭"></a>干货来袭</h1><a id="more"></a><hr><h2 id="基础前言"><a href="#基础前言" class="headerlink" title="基础前言"></a>基础前言</h2><p>&emsp;&emsp;微信⼩程序，简称⼩程序，英⽂名 Mini Program ，是⼀种不需要下载安装即可使⽤的应⽤，它实现<br>了应⽤“触⼿可及”的梦想，⽤⼾扫⼀扫或搜⼀下即可打开应⽤，学习微信小程序的开发前后端分离的模式也一样是有的，微信小程序完整的开发不仅你需要掌握前端三件套（Html，Css，JavaScript）数据库和服务器等后端编程基础也一定得具备（如果你励志成为全栈工程狮）本文重点介绍基于电商平台的微信小程序前端开发基础接口实现，对于如何注册微信公众号小程序appid之类的本文不再赘述，全程讲编程干货！<strong>高能来袭，内容具多！</strong></p><h2 id="1-1选择微信小程序的理由"><a href="#1-1选择微信小程序的理由" class="headerlink" title="1.1选择微信小程序的理由"></a>1.1选择微信小程序的理由</h2><ul><li>微信有海量⽤⼾，⽽且粘性很⾼，在微信⾥开发产品更容易触达⽤⼾。</li><li>推⼴app 或公众号的成本太⾼。</li><li>开发适配成本低。</li><li>跨平台。</li></ul><h2 id="2-1小程序结构目录"><a href="#2-1小程序结构目录" class="headerlink" title="2.1小程序结构目录"></a>2.1小程序结构目录</h2><p>⼩程序框架提供了⾃⼰的视图层描述语⾔ WXML 和 WXSS ，以及 JavaScript ，并在视图层与逻 辑层间提供了数据传输和事件系统，让开发者能够专注于数据与逻辑。</p><table><tr><td>结构</td><td>传统web</td><td>微信小程序</td></tr><tr><td>结构</td><td>HTML</td><td>WXML</td></tr><tr><td>样式</td><td>CSS</td><td>WXSS</td></tr><tr><td>逻辑</td><td>JS</td><td>JS</td></tr><tr><td>配置</td><td>NONE</td><td>JSON</td></tr></table><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MaskXman/source@5.1/wechat1.jpg" alt="微信小程序图片"></p><p>ps：这次用Markdown的表格语法静态页面识别不了不知为啥，改用的html，然后下面再用Markdown语法跳转cdn的jsdeliver链接必须得敲两次回车。。。。编程小坑被get！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;emsp;&amp;emsp;时隔2个月终于要总结一下这断断续续的微信小程序基础开发笔记了，再不总结，我可能连github怎么用都不知道了 。。。。&lt;/p&gt;
+&lt;h1 id=&quot;干货来袭&quot;&gt;&lt;a href=&quot;#干货来袭&quot; class=&quot;headerlink&quot; title=&quot;干货来袭&quot;&gt;&lt;/a&gt;干货来袭&lt;/h1&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://maskxman.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="微信小程序" scheme="http://maskxman.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>微信小程序学习笔记（三）</title>
     <link href="http://maskxman.github.io/2020/07/10/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/"/>
     <id>http://maskxman.github.io/2020/07/10/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/</id>
@@ -263,30 +287,6 @@
   </entry>
   
   <entry>
-    <title>微信小程序学习笔记（一）</title>
-    <link href="http://maskxman.github.io/2020/07/10/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://maskxman.github.io/2020/07/10/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2020-07-10T12:14:30.000Z</published>
-    <updated>2020-05-21T15:12:56.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>&emsp;&emsp;时隔2个月终于要总结一下这断断续续的微信小程序基础开发笔记了，再不总结，我可能连github怎么用都不知道了 。。。。</p><h1 id="干货来袭"><a href="#干货来袭" class="headerlink" title="干货来袭"></a>干货来袭</h1><a id="more"></a><hr><h2 id="基础前言"><a href="#基础前言" class="headerlink" title="基础前言"></a>基础前言</h2><p>&emsp;&emsp;微信⼩程序，简称⼩程序，英⽂名 Mini Program ，是⼀种不需要下载安装即可使⽤的应⽤，它实现<br>了应⽤“触⼿可及”的梦想，⽤⼾扫⼀扫或搜⼀下即可打开应⽤，学习微信小程序的开发前后端分离的模式也一样是有的，微信小程序完整的开发不仅你需要掌握前端三件套（Html，Css，JavaScript）数据库和服务器等后端编程基础也一定得具备（如果你励志成为全栈工程狮）本文重点介绍基于电商平台的微信小程序前端开发基础接口实现，对于如何注册微信公众号小程序appid之类的本文不再赘述，全程讲编程干货！<strong>高能来袭，内容具多！</strong></p><h2 id="1-1选择微信小程序的理由"><a href="#1-1选择微信小程序的理由" class="headerlink" title="1.1选择微信小程序的理由"></a>1.1选择微信小程序的理由</h2><ul><li>微信有海量⽤⼾，⽽且粘性很⾼，在微信⾥开发产品更容易触达⽤⼾。</li><li>推⼴app 或公众号的成本太⾼。</li><li>开发适配成本低。</li><li>跨平台。</li></ul><h2 id="2-1小程序结构目录"><a href="#2-1小程序结构目录" class="headerlink" title="2.1小程序结构目录"></a>2.1小程序结构目录</h2><p>⼩程序框架提供了⾃⼰的视图层描述语⾔ WXML 和 WXSS ，以及 JavaScript ，并在视图层与逻 辑层间提供了数据传输和事件系统，让开发者能够专注于数据与逻辑。</p><table><tr><td>结构</td><td>传统web</td><td>微信小程序</td></tr><tr><td>结构</td><td>HTML</td><td>WXML</td></tr><tr><td>样式</td><td>CSS</td><td>WXSS</td></tr><tr><td>逻辑</td><td>JS</td><td>JS</td></tr><tr><td>配置</td><td>NONE</td><td>JSON</td></tr></table><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MaskXman/source@5.1/wechat1.jpg" alt="微信小程序图片"></p><p>ps：这次用Markdown的表格语法静态页面识别不了不知为啥，改用的html，然后下面再用Markdown语法跳转cdn的jsdeliver链接必须得敲两次回车。。。。编程小坑被get！</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&amp;emsp;&amp;emsp;时隔2个月终于要总结一下这断断续续的微信小程序基础开发笔记了，再不总结，我可能连github怎么用都不知道了 。。。。&lt;/p&gt;
-&lt;h1 id=&quot;干货来袭&quot;&gt;&lt;a href=&quot;#干货来袭&quot; class=&quot;headerlink&quot; title=&quot;干货来袭&quot;&gt;&lt;/a&gt;干货来袭&lt;/h1&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="http://maskxman.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="微信小程序" scheme="http://maskxman.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
     <title>微信小程序踩坑总结</title>
     <link href="http://maskxman.github.io/2020/07/10/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%B8%A9%E5%9D%91%E6%80%BB%E7%BB%93/"/>
     <id>http://maskxman.github.io/2020/07/10/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%B8%A9%E5%9D%91%E6%80%BB%E7%BB%93/</id>
@@ -334,30 +334,6 @@
   </entry>
   
   <entry>
-    <title>闲聊1.0</title>
-    <link href="http://maskxman.github.io/2020/07/10/%E9%97%B2%E8%81%8A1.0/"/>
-    <id>http://maskxman.github.io/2020/07/10/%E9%97%B2%E8%81%8A1.0/</id>
-    <published>2020-07-10T12:14:30.000Z</published>
-    <updated>2020-05-21T13:53:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="初入博客"><a href="#初入博客" class="headerlink" title="初入博客"></a>初入博客</h2><hr><p>第一次建博客花费了大概3天左右，从html css什么都不会，到完整看完基于hexo的volantis的主</p><a id="more"></a>题博客的官方文档，获益匪浅。对于前端的世界算是偷窥一角，这种所写即所得的感觉着实太好了，看到自己改完的博客框架很有满足感。在这个博客中，我会把我学习的知识在其中分享。<h3 id="本站是技术博客，欢迎各位道友！"><a href="#本站是技术博客，欢迎各位道友！" class="headerlink" title="本站是技术博客，欢迎各位道友！"></a>本站是技术博客，欢迎各位道友！</h3>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;初入博客&quot;&gt;&lt;a href=&quot;#初入博客&quot; class=&quot;headerlink&quot; title=&quot;初入博客&quot;&gt;&lt;/a&gt;初入博客&lt;/h2&gt;&lt;hr&gt;
-&lt;p&gt;第一次建博客花费了大概3天左右，从html css什么都不会，到完整看完基于hexo的volantis的主&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="个人生活" scheme="http://maskxman.github.io/categories/%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="个人生活" scheme="http://maskxman.github.io/tags/%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
     <title>数据结构之顺序栈</title>
     <link href="http://maskxman.github.io/2020/07/10/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E9%A1%BA%E5%BA%8F%E6%A0%88/"/>
     <id>http://maskxman.github.io/2020/07/10/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E9%A1%BA%E5%BA%8F%E6%A0%88/</id>
@@ -400,6 +376,30 @@
     
     
       <category term="数据结构" scheme="http://maskxman.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>闲聊1.0</title>
+    <link href="http://maskxman.github.io/2020/07/10/%E9%97%B2%E8%81%8A1.0/"/>
+    <id>http://maskxman.github.io/2020/07/10/%E9%97%B2%E8%81%8A1.0/</id>
+    <published>2020-07-10T12:14:30.000Z</published>
+    <updated>2020-05-21T13:53:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="初入博客"><a href="#初入博客" class="headerlink" title="初入博客"></a>初入博客</h2><hr><p>第一次建博客花费了大概3天左右，从html css什么都不会，到完整看完基于hexo的volantis的主</p><a id="more"></a>题博客的官方文档，获益匪浅。对于前端的世界算是偷窥一角，这种所写即所得的感觉着实太好了，看到自己改完的博客框架很有满足感。在这个博客中，我会把我学习的知识在其中分享。<h3 id="本站是技术博客，欢迎各位道友！"><a href="#本站是技术博客，欢迎各位道友！" class="headerlink" title="本站是技术博客，欢迎各位道友！"></a>本站是技术博客，欢迎各位道友！</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;初入博客&quot;&gt;&lt;a href=&quot;#初入博客&quot; class=&quot;headerlink&quot; title=&quot;初入博客&quot;&gt;&lt;/a&gt;初入博客&lt;/h2&gt;&lt;hr&gt;
+&lt;p&gt;第一次建博客花费了大概3天左右，从html css什么都不会，到完整看完基于hexo的volantis的主&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="个人生活" scheme="http://maskxman.github.io/categories/%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="个人生活" scheme="http://maskxman.github.io/tags/%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
